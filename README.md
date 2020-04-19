@@ -204,3 +204,20 @@ To test another auth-provider follow these steps:
 * add app-key and app-secret to your encrypted credentials.yml.enc
 * add auth-provider in your config/initializers/omniauth.rb
 
+
+## 8. Some Extras
+
+To allow our users to logout, create the `destroy` method in your session controller:
+
+```
+def destroy
+  reset_session
+  render :plain => "You've logged out!"
+end
+```
+
+In your `routes.rb` add:
+
+```
+get '/logout', :to => 'sessions#destroy'
+```

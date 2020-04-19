@@ -21,6 +21,11 @@ class SessionsController < ApplicationController
 		end
   end
 
+  def destroy
+  	reset_session
+  	render :plain => "You've logged out!"
+	end
+
   def failure
   end
 end
