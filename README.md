@@ -1,5 +1,7 @@
 # README
 
+A simple starter template for Rails 5.2.4 and Omniauth, handling multiple authentication providers (Facebook and Twitter)
+
 ## 1. Prepare the application
 
 Now open your Gemfile and reference the omniauth gem and the gem for the auth-provider you choose.
