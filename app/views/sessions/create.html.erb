@@ -1,2 +1,9 @@
-<h1>Sessions#create</h1>
-<p>Find me in app/views/sessions/create.html.erb</p>
+<h1>Success!</h1>
+<p><%= @message %> </p>
+
+<p>You can try another login method</p>
+<p><%= link_to "Connect With Facebook", "/auth/facebook" %></p>
+<p><%= link_to "Connect With Twitter", "/auth/twitter" %></p>
+
+<p></p>
+<p>Or logout here: <%= link_to "Logout", "/logout" %></p>
